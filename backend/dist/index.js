@@ -8,6 +8,7 @@ const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
 const authRoutes_1 = __importDefault(require("./routes/authRoutes"));
 const taskRoutes_1 = __importDefault(require("./routes/taskRoutes"));
+require("dotenv/config");
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
 app.use((err, req, res, next) => {

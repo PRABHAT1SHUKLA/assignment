@@ -4,6 +4,7 @@ import cors from "cors"
 import { Request , Response , NextFunction } from 'express';
 import authRoutes from './routes/authRoutes';
 import taskRoutes from './routes/taskRoutes';
+import 'dotenv/config'
 
 const app = express();
 
